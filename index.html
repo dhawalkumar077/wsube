@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// var array = [5, 7, 9, 1, 8, 10, 54, 14, 14, 35, 44];
+			// var secondsmallest = 0;
+			// for (var i = 0; i < array.length; i++) {
+			// 	if (array[i] < secondsmallest) {
+			// 		secondsmallest = array[i];
+			// 	}
+			// }
+			// console.log(secondsmallest);
+			// 1
+
+			var array = [5, 7, 9, 1, 8, 10, 54, 14, 14, 35, 44];
+			var smallest = 7;
+			var secondsmallest = 1;
+			for (var i = 0; i < array.length; i++) {
+				if (array[i] < smallest) {
+					secondsmallest = smallest;
+					smallest = array[i];
+				} else if (array[i] < secondsmallest && array[i] !== smallest) {
+					secondsmallest = array[i];
+				}
+			}
+			console.log(secondsmallest);
+
+			// 4
+
+			// var array = [1, 2, 3, 4, 5];
+			// var array2 = [5, 6, 7];
+			// var merge = [];
+			// for (var i = 0; i < array.length; i++) {
+			// 	merge.push(array[i]);
+			// }
+			// for (var i = 0; i < array2.length; i++) {
+			// 	merge.push(array2[i]);
+			// }
+			// console.log(
+			// 	merge.sort(function (a, b) {
+			// 		return a - b;
+			// 	})
+			// );
+
+			// 5
+			// var array = ["apple", "banana", "chrrry", "blueberry", "mango", "sky"];
+			// var longest = "apple";
+			// for (var i = 0; i < array.length; i++) {
+			// 	if (array[i].length > longest.length) {
+			// 		longest = array[i];
+			// 	}
+			// }
+			// console.log(longest);
+
+			// 6
+			// var array = [-3.5, -7, -3, 2, -1, 8, 10];
+			// var negativearray = -3;
+			// for (var i = 0; i < array.length; i++);
+			// {
+			// 	if (array[i] < 0) {
+			// 		negativearray.push(array[i]);
+			// 	}
+			// 	console.log(negativearray);
+			// }
+
+			// 7
+			// var array = ["apple", "banana", "blueberry", "mango", "sky"];
+			// var shortarray = "apple";
+			// for (var i = 0; i < array.length; i++) {
+			// 	if (array[i].length >= 6) {
+			// 		shortarray = array[i];
+			// 		console.log(shortarray);
+			// 	}
+			// }
+
+			// 8
+			// var arr = [-3, 5, -7, -3, 2, -1, 8, 10];
+			// var average = findAverage(arr);
+			// function findAverage(arr) {
+			// 	if (arr.length === 0) {
+			// 		return 0;
+			// 	}
+			// 	var total = arr.reduce((acc, curr) => acc + curr, 0);
+			// 	return total / arr.length;
+			// }
+
+			// console.log(average);
+		</script>
+	</body>
+</html>
